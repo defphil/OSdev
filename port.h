@@ -33,17 +33,17 @@ protected:
         public:
         Port16Bit(uint16_t portnumber);
         ~Port16Bit();
-        virtual void Write(uint8_t data);
-        virtual uint8_t Read();
+        virtual void Write(uint16_t data);
+        virtual uint16_t Read();
     };
 
     class Port32Bit : public Port
     {
         public:
-        Port32Bit(uint16_t portnumber);
+        Port32Bit(uint32_t portnumber);
         ~Port32Bit();
-        virtual void Write(uint8_t data);
-        virtual uint8_t Read();
+        virtual void Write(uint32_t data);
+        virtual uint32_t Read();
     };
 
 
