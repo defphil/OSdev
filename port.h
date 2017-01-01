@@ -5,12 +5,11 @@
 
 class Port
 {
-    
 protected:
     uint16_t portnumber;
     Port(uint16_t portnumber);
     ~Port();
-
+};
     class Port8Bit : public Port
     {
         public:
@@ -46,8 +45,6 @@ protected:
         virtual void Write(uint8_t data);
         virtual uint8_t Read();
     };
-
-};
 
 
 #endif
