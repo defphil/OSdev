@@ -38,10 +38,11 @@ uint16_t GlobalDescriptorTable::CodeSegmentSelector()
 
 GlobalDescriptorTable::SegmentDescriptor::SegmentDescriptor(uint32_t base, uint32_t limit, uint8_t flags)
 {
-    uint8_t target = (uint8_t*)this;
+    uint8_t* target = (uint8_t*)this;
 
     // Checking limit to see if it can be encoded
-    if(limit <= 65536) {
+    if(limit <= 65536)
+    {
         target[6] = 0x40;
     } else {
         if ((limit & 0xFFF) != 0xFFF)    // if all the bits are not one
