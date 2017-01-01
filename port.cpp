@@ -66,7 +66,7 @@ uint16_t Port16Bit::Read()
     return result;
 }
 
-Port32Bit::Port32Bit(uint132_t portnumber): Port(portnumber)
+Port32Bit::Port32Bit(uint32_t portnumber): Port(portnumber)
 {
 }
 
