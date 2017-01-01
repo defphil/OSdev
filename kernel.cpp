@@ -43,8 +43,8 @@ void printf(char*str)
 
 extern "C" void kernelMain(const void* multiboot_structure, uint32_t  /*magicnumber*/)
 {
-    printf("Hello World! TEST TEST TEST TEST TEST");
-    printf("Hello World! TEST TEST TEST TEST TEST");
+    printf("Hello World! TEST TEST TEST TEST TEST TEST TEST TEST TEST");
+    printf("Hello World! TEST TEST TEST TEST TEST TEST TEST TEST TEST");
 
     GlobalDescriptorTable gdt;
 
