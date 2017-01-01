@@ -21,9 +21,8 @@ GlobalDescriptorTable::GlobalDescriptorTable()
     asm volatile("lgdt (%0)": :"p" (((uint8_t *) i) + 2));
 }
 
-GlobalDescriptorTable::-GlobalDescriptorTable()
+GlobalDescriptorTable::~GlobalDescriptorTable()
 {
-    // destructor
 }
 
 uint16_t GlobalDescriptorTable::DataSegmentSelector()
