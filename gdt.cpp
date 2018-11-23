@@ -2,7 +2,6 @@
  *
  * http://wiki.osdev.org/GDT_Tutorial
  *
- * Continue from ~42min mark, Part 3
  *
  */
 
